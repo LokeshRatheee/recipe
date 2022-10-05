@@ -1,0 +1,46 @@
+.dot {
+  height: 7px;
+  width: 7px;
+  background-color: rgb(0, 0, 0);
+  border-radius: 50%;
+  display: inline-block;
+}
+.zoom-img {
+  width: 300px;
+  height: auto;
+  overflow: hidden;
+  /* border-radius: 10px; */
+}
+
+.zoom-img img {
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.zoom-img img:hover {
+  transform: scale(1.2);
+}
+.card {
+  box-shadow: 4px 1px 22px 1px rgba(0, 0, 0, 0.6);
+}
+
+/* .card :hover{
+  box-shadow: 4px 1px 22px 1px rgba(0,0,0,0.78);
+} */
+
+@media (min-width: 320px) {
+  .cards {
+    margin-left: 6px;
+    border-radius: 5px;
+
+    /* box-shadow: 7px 12px 28px 8px rgba(0, 0, 0, 0.3); */
+  }
+  img {
+    margin-left: 10px;
+  }
+  .card-title,
+  .cuisine,
+  .dishtype {
+    text-align: center;
+  }
+}
